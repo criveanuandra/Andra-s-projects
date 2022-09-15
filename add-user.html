@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add user</title>
+  <link rel="stylesheet" href="add-user.css">
+</head>
+<body>
+  <form id="add-user-form" onsubmit="return false;">
+    <h2>Add new user</h2>
+
+    <div class="first-name-container">
+      <input type="text" id="first-name" placeholder="First name">
+    </div>
+
+    <div class="last-name-container">
+      <input type="text" id="last-name" placeholder="Last name">
+    </div>
+
+    <div class="email-container">
+      <input type="text" id="email" placeholder="Email">
+    </div>
+
+    <div class="add-user-button-container">
+      <button onclick="onAddUser()">Add user</button>
+    </div>
+
+    <div id="validation-error"></div>
+    <div id="result"></div>
+  </form>
+  <script src="add-user.js"></script>
+</body>
+</html>
